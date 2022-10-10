@@ -2,13 +2,12 @@
 *{
   margin:auto;
   padding: auto;
- 
 }
 .container{
   width:600px;
-  height:100vh;
+  min-height:100vh;
+  margin: 100px 0;
   border:none;
-  margin:auto;
   display:flex;
   flex-direction: column;
   justify-content: center;
