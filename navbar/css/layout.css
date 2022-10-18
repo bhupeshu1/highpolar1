@@ -1,0 +1,215 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.left-flex {
+  width: 25%;
+  min-height: 100vh;
+  border: 1px solid rgb(29, 27, 27);
+  background-color: black;
+}
+
+.right-flex{
+  width: 75%;
+  min-height: 100vh;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-first {
+  min-height: 120px;
+  width: 100%;
+  border: none;
+  display: flex;
+}
+
+.right-second {
+  min-height: 100vh;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-inner {
+  min-height: 550px;
+  width: 95%;
+  border: 1px solid gray;
+}
+
+#image-1 {
+  position: relative;
+  left: 45px;
+  top: 25px;
+  height: 80px;
+  width: 80px;
+}
+
+#image-2 {
+  position: relative;
+  bottom: -22px;
+  height: 40px;
+  width: 40px;
+  right: 15px;
+}
+
+.list {
+  margin-top: 50px;
+  text-align: center;
+  padding: 8px;
+}
+
+.list,
+li {
+  padding: 20px 4px;
+}
+
+.heading {
+  color: white;
+  padding: 4px 4px;
+  position: relative;
+  bottom: 30px;
+  left: 130px;
+
+}
+
+.written {
+  padding: 10px 30px;
+}
+
+.wrapper {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.ticket {
+  padding: 14px;
+
+}
+
+.customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.first-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.second-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+.third-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.fourth-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.fifth-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.sixth-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.seventh-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+.eighth-button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+.wrapper{
+  background-color: black;
+  width: 100%;
+  align-items: stretch;
+}
+#sidebar{
+  min-height: 100vh;
+}
+
+table, th, td {
+  border-left: none;
+  border-right: none;
+}
+.sort{
+text-align:right;
+margin-right:90px;
+}
+.test{
+  position:relative;
+  left:920px;
+  bottom:39px;
+  }
+  #notification{
+    position:absolute;
+    right:200px;
+  }

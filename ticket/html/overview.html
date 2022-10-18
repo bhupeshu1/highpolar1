@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/ticket.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-navbar">
+      <img src="../image/Ellipse.png" height="90px" width="90px" id="ellipse">
+      <img src="../image/D.png" height="50px" width="40px" id="dimage">
+      <h1 class="lefthead">Dashboard Kit</h1>
+      <ul class="navigate">
+        <li>
+          <img src="../image/Vector.png">
+          <a href="#home">Overview</a>
+        </li>
+        <li>
+          <img src="../image/Vector 2.png">
+          <a href="#news">Tickets</a>
+        </li>
+        <li>
+          <img src="../image/Vector 3.png">
+          <a href="#contact">Ideas</a>
+        </li>
+        <li>
+          <img src="../image/Vector 4.png">
+          <a href="#about">Contacts</a>
+        </li>
+        <li>
+          <img src="../image/Vector 5.png">
+          <a href="#home">Agents</a>
+        </li>
+        <li>
+          <img src="../image/Vector 6.png">
+          <a href="#news">Articles</a>
+        </li>
+        <li>
+          <img src="../image/Vector 8.png">
+          <a href="#contact">Settings</a>
+        </li>
+        <li>
+          <img src="../image/Vector 9.png">
+          <a href="#about">Subscription</a>
+        </li>
+      </ul>
+    </div>
+    <div class="inner-container">
+      <div class="top-first">
+        <img src="../image/Ellipse 2.png" id="search">
+        <img src="../image/Vector 10.png" id="vector">
+        <img src="../image/Vector 11.png" id="notification">
+        <p id="para-1"><img src="../image/m header.png" height="30px" id="png">Jones Ferdinand</p>
+        <h2 class="over">Overview</h2>
+      </div>
+      <div class="top-second">
+        <div class="box">
+          <h4 class="written">Unresolved</h4>
+          <h1>60</h1>
+        </div>
+        <div class="box-2" id="boxs">
+          <div class="overdue">
+            <h4>Overdue</h4>
+            <h1>16</h1>
+          </div>
+        </div>
+        <div class="box">
+          <h4 class="written">Open</h4>
+          <h1>43</h1>
+        </div>
+        <div class="box">
+          <h4 class="written">On hold</h4>
+          <h1>64</h1>
+        </div>
+      </div>
+      <div class="third">
+        <div class="chart">
+          <canvas id="myChart" style="width:100%;max-width:700px;height:350px;"></canvas>
+        </div>
+        <div class="chart-right">
+          <div class="small">
+
+            <p class="home">Resolved</p>
+            <p class="home">449</p>
+
+          </div>
+          <div class="small">
+            <p class="home">Received</p>
+            <p class="home">426</p>
+          </div>
+          <div class="small">
+            <p class="home">Average first response time</p>
+            <p class="home">33m</p>
+          </div>
+          <div class="small">
+            <p class="home">Average response time</p>
+            <p class="home">3h 8m</p>
+          </div>
+          <div class="small">
+            <p class="home">Resolution within SLA</p>
+            <p class="home">94%</p>
+          </div>
+        </div>
+      </div>
+      <div class="fourth">
+        <div class="footer">
+          <table>
+            <tr>
+              <th>
+                <p>Group: Support</p>Unresolved tickets
+              </th>
+              <th>View details</th>
+            </tr>
+            <tr>
+              <td>Waiting on Feature Request</td>
+              <td>4238</td>
+            </tr>
+            <tr>
+              <td>Awaiting Customer Response</td>
+              <td>1005</td>
+            </tr>
+            <tr>
+              <td>Awaiting Developer Fix</td>
+              <td>914</td>
+            </tr>
+            <tr>
+              <td>Pending</td>
+              <td>281</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer">
+          <table>
+            <tr>
+              <th>Tasks<p>Today</p>
+              </th>
+              <th>View all</th>
+            </tr>
+            <td>Create new task</td>
+            <td><img src="../image/sheet.png"></td>
+            </tr>
+            <tr>
+              <td>Finish ticket update</td>
+              <td><button class="btn-1">Urgent</button></td>
+            </tr>
+            <tr>
+              <td>Create new ticket example</td>
+              <td><button class="btn-2">New</button></td>
+            </tr>
+            <tr>
+              <td>Update ticket report</td>
+              <td><button class="btn-3">Default</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script>
+    var xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+    new Chart("myChart", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [{
+          data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+          borderColor: "red",
+          fill: false
+        }, {
+          data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+          borderColor: "green",
+          fill: false
+        }, {
+          data: [10, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+          borderColor: "blue",
+          fill: false
+        }]
+      },
+      options: {
+        legend: { display: false }
+      }
+    });
+  </script>  
+</body>
+
+</html>
