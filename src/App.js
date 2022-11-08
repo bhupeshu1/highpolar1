@@ -6,8 +6,7 @@ import Dashboard from "./Dashboard/index";
 import Login from "./login/index";
 
 
-
-function App() {
+function App(){
   return (
     <Router>
       <Routes>
@@ -20,4 +19,4 @@ function App() {
 }
 
 
-export default App;
+export default App
